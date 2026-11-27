@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloudwren Labs</title>
+<meta name="description" content="Cloudwren Labs makes Bidyut Hisab: Prepaid Meter.">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F4F7FC; --surface: #FFFFFF; --text: #0F1A2E; --muted: #4A5872;
+  --line: #DCE3EF; --primary: #1E5BD8; --primary-soft: #E6EEFC; --on-primary: #FFFFFF;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #070D1C; --surface: #0F1830; --text: #E8EEF9; --muted: #A3B1CB;
+    --line: #22304F; --primary: #7FA6FF; --primary-soft: #16244A; --on-primary: #081022;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #070D1C; --surface: #0F1830; --text: #E8EEF9; --muted: #A3B1CB;
+  --line: #22304F; --primary: #7FA6FF; --primary-soft: #16244A; --on-primary: #081022;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.7 "Noto Sans Bengali", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+header.top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+header.top img { width: 48px; height: 48px; border-radius: 12px; }
+header.top .name { font-weight: 700; font-size: 18px; line-height: 1.3; }
+header.top .by { color: var(--muted); font-size: 14px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px 20px; }
+h1 { font-size: 24px; line-height: 1.35; margin: 0 0 4px; }
+h2 { font-size: 18px; line-height: 1.4; margin: 28px 0 6px; }
+p, ul { margin: 0 0 12px; }
+ul { padding-left: 22px; }
+li { margin-bottom: 4px; }
+a { color: var(--primary); overflow-wrap: anywhere; }
+.updated { color: var(--muted); font-size: 14px; margin-bottom: 16px; }
+.tabs { display: inline-flex; gap: 4px; padding: 4px; margin-bottom: 16px; border-radius: 999px; background: var(--primary-soft); }
+.tabs a { padding: 6px 16px; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 15px; color: var(--primary); }
+.tabs a[aria-current="true"] { background: var(--primary); color: var(--on-primary); }
+.js section[hidden] { display: none; }
+footer { color: var(--muted); font-size: 14px; margin-top: 24px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div><div class="name">Cloudwren Labs</div><div class="by">Apps for everyday life in Bangladesh</div></div>
+</header>
+<div class="card">
+  <header class="top" style="margin-bottom:12px">
+    <img src="bidyut-hisab/icon.png" alt="">
+    <div><div class="name">বিদ্যুৎ হিসাব: প্রিপেইড মিটার</div><div class="by">Bidyut Hisab: Prepaid Meter</div></div>
+  </header>
+  <p lang="bn">প্রিপেইড মিটারের আজকের ব্যালেন্স, কত দিন চলবে আর ফ্রি লো-ব্যালেন্স নোটিফিকেশন। DESCO ও NESCO-র জন্য অনানুষ্ঠানিক অ্যাপ।</p>
+  <p>Today's prepaid meter balance, days left and free low-balance alerts. An unofficial app for DESCO and NESCO customers.</p>
+  <p><a href="https://play.google.com/store/apps/details?id=com.bidyuthisab.app">Google Play</a> · <a href="bidyut-hisab/privacy/">গোপনীয়তা নীতি / Privacy policy</a></p>
+</div>
+<footer>Contact: <a href="mailto:cloudwrenlabs@gmail.com">cloudwrenlabs@gmail.com</a></footer>
+</div>
+</body>
+</html>
